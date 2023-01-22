@@ -8,23 +8,19 @@
 #include <stdexcept>
 #include "Person.h"
 
-using std::string;
+using namespace std;
 
 class Manager: public Person
 {   public:
         // constructor should initialise name and registration number using arguments
         Manager(const string &name, int regNo);
-		Manager(Manager &otherManager);
-
-		//destructor
-		//~Manager();
 
 	   // method to return registration number
 	   int getRegNo() const;
 
     private:
-	   int regNo;
-	   string name;
+		//not needed because of the edit to Person
+	   //int regNo;
 };
 
 #endif

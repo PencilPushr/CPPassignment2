@@ -5,23 +5,19 @@
 
 #include <string>
 
-using std::string;
+using namespace std;
 
 class Person
-{   
-public:
-	//default con
-	Person();
-	//constructor
-	Person(const string& name);
-	//copy constructor
-	Person(Person& otherPerson);
-	//destructor not needed as we are only using heap memory
-	//~Person();
-	string getName() const;
-	void changeName(const string &newName);
-protected:
-	string name;
+{   public:
+        Person(const string &name, const int& regNo);
+		//default constructor
+		//Person();
+	   string getName() const;
+	   //don't use this, it fucks up the program
+	   void changeName(const string &newName);
+    protected:
+	   string name;
+	   int regNo;
 };
 
 #endif

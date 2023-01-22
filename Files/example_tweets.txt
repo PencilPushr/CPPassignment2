@@ -1,0 +1,21 @@
+//user_id tweet_id tweet_reputation YYYY-MM-DD HH:MM:SS string_tweet
+60730027 64638141 100.0 2007-01-01 00:00:00 My first tweet!
+60730027 70761837 100.0 2007-01-01 00:00:01 Just setting up my Twitter account.
+30015494 98765432 100.0 1012-01-01 00:00:00 Eating donuts is the best!
+30015494 98765433 100.0 1012-01-01 00:00:01 Just pulled a prank on my sister Lisa
+31064071 98765434 100.0 2011-01-01 00:00:00 Studying for my upcoming exams.
+31064071 98765435 100.0 2011-01-01 00:00:01 Just read a great book on science.
+30304486 98765436 100.0 3013-01-01 00:00:00 Mmm... donuts.
+30304486 98765437 100.0 3013-01-01 00:00:01 Just got off work at the power plant.
+29753356 98765438 100.0 3015-01-01 00:00:00 Excited to play in the next match
+29753356 98765439 100.0 3015-01-01 00:00:01 Just finished training
+34865169 98765440 100.0 2033-01-01 00:00:00 Excited to play in the next match
+34865169 98765441 100.0 2033-01-01 00:00:01 Just finished training
+15990804 98765442 100.0 1022-01-01 00:00:00 Excited to play in the next match
+15990804 98765443 100.0 1022-01-01 00:00:01 Just finished training
+10950582 98765444 100.0 3018-01-01 00:00:00 Excited to play in the next match
+10950582 98765445 100.0 3018-01-01 00:00:01 Just finished training
+22743516 98765446 100.0 2019-01-01 00:00:00 Just finished filming my new movie
+22743516 98765447 100.0 2019-01-01 00:00:01 Excited to share my new project with you all
+22743516 98765448 100.0 1025-01-01 00:00:00 Python programming is fun!
+22743516 98765449 100.0 1025-01-01 00:00:01 Just wrote a new script for a comedy skit

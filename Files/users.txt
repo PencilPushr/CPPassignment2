@@ -1,0 +1,16 @@
+//user_id, first_name, last_name, accum_score, no_tweets, no_moderated_tweets, no_reports
+60730027 Leslie Winkle 200.0 2 0 0
+30015494 Bart Simpson 200.0 2 0 0
+31064071 Lisa Simpson 200.0 2 0, 0
+30304486 Homer Simpson 14.0 2 0 0
+0001 Nicola Tesla
+29753356 John Terry 200.0 2 0 0
+34865169 Wayne Rooney 200.0 2 0 0
+15990804 Cristiano Ronaldo 200.0 2 0 0
+0002 Albert Einstein
+10950582 Lionel Messi 200.0 2 0 0
+22743516 Tom Cruise 200.0 2 0 0
+22743516 Monty Python 200.0 2 0 0
+0003 Alex Vallee
+98765678 Jack
+

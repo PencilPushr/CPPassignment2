@@ -1,49 +1,55 @@
 #include "User.h"
+#include <iostream>
 
-User::User(const string& name, int regNo)
+
+NoScoreException::NoScoreException(const char* message) : std::exception(message)
 {
-	this->name = name;
-	this->regNo = regNo;
+	//C-style string exception
 }
+
+
+NoScoreException::~NoScoreException() 
+{
+	//this is incase, you wish to add a private variable such as std::string _message in the class, otherwise this just acts as a placeholder destructor
+}
+
+char const* NoScoreException::what() const noexcept
+{
+	return "You attempted to call/update a User score when they have none.";
+}
+
+User::User(const string& name, int regNo) : Person(name, regNo)
+{
+}
+
+/*
+ * ------------------------------------------------------- USER MEMBER FUNCTIONS -----------------------------------------------------------------------
+ */
 
 int User::getRegNo() const
 {
 	return this->regNo;
 }
 
-void User::addScore(float score, string twit)
+float User::calculateAverageScore(float accumulated_score, int no_of_tweets)
 {
-	this->accumulative_reputation_score += score;
+	return (accumulated_score / no_of_tweets);
 }
 
 bool User::updateAccumulativeScore(float score)
 {
-	return this->accumulative_reputation_score += score;
-}
-
-//the template means we can use a float or an int for our division
-template <size_t N>
-bool User::updateFASTRunningAverage(float avg, float score)
-{
-	this->average_reputation_score; -= this->average_reputation_score; / N;
-	this->average_reputation_score; += input / N;
-	return this->average_reputation_score;
-}
-
-bool User::updateCircularRunningAverage(float score)
-{
-
+	try
+	{
+		if (this->m_noTweets == 0) throw (NoScoreException());
+		this->accumulative_reputation_score += score;
+	}
+	catch (NoScoreException nse)
+	{
+		std::cout << nse.what();
+	}
 }
 
 ostream& operator<<(ostream& str, const User& s)
 {
-	str = "Users regNo: " + std::to_string(s.regNo) + "\n"
-			+ "Users name: " + s.name + "\n"
-			+ "User accumlative rep: " + std::to_string(s.accumulative_reputation_score) + "\n"
-			+ "Users average rep " + std::to_string(s.average_reputation_score) + "\n"
-		//I assume we will need to iterate through the map (of the highest and lowest tweets so I'm leaving this overloaded operator incomplete
-		// + "Users highest rated tweet: " std::multimap::iterator collect the pair with the highest number and print out the associated key (std::string)
-
-	// TODO: insert return statement here
 	return str;
 }
