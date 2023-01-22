@@ -1,3 +1,0 @@
-D:/ShittyCppAssignment/BadTwitter/out/build/x64-debug/CMakeFiles/BadTwitter.dir
-D:/ShittyCppAssignment/BadTwitter/out/build/x64-debug/CMakeFiles/edit_cache.dir
-D:/ShittyCppAssignment/BadTwitter/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
