@@ -1,5 +1,6 @@
 #include "FileHandler.h"
 #include <iostream>
+#include <iomanip>
 
 FileHandler::FileHandler()
 {
@@ -62,11 +63,11 @@ void FileHandler::appendLineToFile(std::string newWord) {
 	m_file.appendLineToFile(newWord);
 }
 
-void FileHandler::insertAndOverWritefile(size_t pos, std::string newWord) {
+void FileHandler::insertAndOverWritefile(size_t& pos, std::string& newWord) {
 	m_file.insertAndOverWritefile(pos, newWord);
 }
 
-void FileHandler::updateBlackList(std::string newWordToBlacklist) {	
+void FileHandler::updateBlackList(std::string& newWordToBlacklist) {
 	m_blacklist.updateBlackList(newWordToBlacklist);
 }
 
@@ -84,4 +85,10 @@ vector<string> FileHandler::getBlackListBuf() {
 
 char FileHandler::getFilterChar() {
 	return m_blacklist.getFilterChar();
+}
+
+std::string padWithZeros(std::string& input){
+    std::ostringstream oss;
+    oss < std::setfill('0') << std::setw(5) << input;
+    return oss.str();
 }
